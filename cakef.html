@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>HappyCake</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;900&family=Ubuntu&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/7258ec066a.js" crossorigin="anonymous"></script>
+
+  <!-- Bootstrap Scripts -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "9fff96f3-c695-42cb-a001-9b79c6fdfeee", // The ID of this integration.
+      region: "us-south", // The region your integration is hosted in.
+      serviceInstanceID: "72c204d1-99cb-45f0-b9a3-f0b0f24cb4d6", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+
+  <section class="colored-section" id="title">
+    <div class="container-fluid">
+
+      <!-- Nav Bar -->
+
+      <nav class="navbar navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" style="color:#2F5D62">HappyCake</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" style="color:#2F5D62" href="#cta">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:#2F5D62" href="#pricing">Cakes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" style="color:#2F5D62" href="#pricing">Frostings</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+
+      <!-- Title -->
+      <div class="row">
+        <div class="col-lg-6">
+          <h1 class="big-heading">Welcome to HappyCake for the cake of your dreams just an order away.</h1>
+        </div>
+        <div class="col-lg-6">
+          <img class="title-img" src="titleimage.jpg" alt="iphone-mockup">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Features -->
+
+  <section class="white-section" id="features">
+    <div class="container-fluid">
+
+    <div class="row">
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-check-circle fa-4x"></i>
+        <h3 class="feature-title">Easy to order</h3>
+        <p>Pick your favourite HappyCake. Order from the chatbot on the left bottom</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-bullseye fa-4x"></i>
+        <h3 class="feature-title">Made for you</h3>
+        <p>We make your cake with your love for you.</p>
+      </div>
+
+      <div class="feature-box col-lg-4">
+        <i class="icon fas fa-heart fa-4x"></i>
+        <h3 class="feature-title">Guaranteed to work.</h3>
+        <p>Get your delicious cake with no more time to waste.</p>
+      </div>
+
+    </div>
+
+    </div>
+  </section>
+
+
+  <!-- Testimonials -->
+
+  <section class="colored-section" id="testimonials">
+
+    <div id="testimonial-carousel" class="carousel slide" data-ride="false">
+      <div class="carousel-inner">
+
+        <div class="carousel-item active container-fluid">
+          <h2 class="testimonial-text">If you want to treat yourself to some of the best desserts, HappyCake is the best.The chocolate cake is wonderful.</h2>
+          <img class="testimonials-img" src="chocolate cake.jpg" alt="chocolate caake">
+          <em>Maria Koshy, Kottayam</em>
+        </div>
+
+        <div class="carousel-item container-fluid">
+          <h2 class="testimonial-text">Extra Rich Creamy Cheese Cake. The best. Honestly no words. Love it!!! Order them.</h2>
+          <img class="testimonials-img" src="cheesecake.jpg" alt="cheese-cake">
+          <em>Beverly,Pathanamthitta</em>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#testimonial-carousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <a class="carousel-control-next" href="#testimonial-carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+
+    </div>
+  </section>
+
+  <!-- Pricing -->
+
+  <section class="white-section" id="pricing">
+
+    <h2 class="section-heading">List of Flavourites</h2>
+    <p>Tasty and Happy options we have for you</p>
+
+    <div class="row">
+      <div class="pricing-col col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Cakes</h3>
+          </div>
+          <div class="card-body">
+            <p>Banana cake</p>
+            <p>Beer cake</p>
+            <p>Butter cake</p>
+            <p>Butterscotch</p>
+            <p>Carrot cake</p>
+            <p>Cheese cake</p>
+            <p>Chocolate cake</p>
+            <p>Chocolate mud cake</p>
+            <p>Christmas cake</p>
+            <p>Coconut cake</p>
+            <p>Cupcake</p>
+            <p>Plum cake</p>
+            <p>Pound cake</p>
+            <p>Pudding</p>
+            <p>Red velvet</p>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-col col-lg-4 col-md-6">
+        <div class="card">
+          <div class="card-header">
+            <h3>Frostings</h3>
+          </div>
+          <div class="card-body">
+            <p>Buttercream</p>
+            <p>CheeseCream</p>
+            <p>Chocolate</p>
+            <p>Mocha</p>
+            <p>Nutella</p>
+            <p>Raspberry</p>
+            <p>Royal icing</p>
+            <p>Salted Caramel</p>
+            <p>White Chocolate</p>
+          </div>
+        </div>
+      </div>
+      <div class="pricing-col col-lg-4">
+        <div class="card">
+          <div class="card-header">
+            <h3>Quantities</h3>
+          </div>
+          <div class="card-body">
+            <p>1/2kg</p>
+            <p>1kg</p>
+            <p>1+1/2 kg</p>
+            <p>2kg</p>
+            <p>4kg</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- Call to Action -->
+
+  <section class="colored-section" id="cta">
+    <div class="container-fluid">
+
+    <h3 class="big-heading" style="font-weight:normal;color:#2F5D62">Contact</h3>
+    <p>Roshni Susan Regi</p>
+    <p>Pathanamthitta</p>
+    <p>+91 9876543212</p>
+    <p>+91 9129293949</p>
+    <p>e-mail: liyath@gmail.com</p>
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+
+  <footer class="white-section" id="footer">
+    <div class="container-fluid">
+
+    <i class="footer-icon fab fa-twitter"></i>
+    <i class="footer-icon fab fa-facebook-f"></i>
+    <i class="footer-icon fab fa-instagram"></i>
+    <i class="footer-icon fas fa-envelope"></i>
+    <p>© Copyright TinDog 2020</p>
+
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
